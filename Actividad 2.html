@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Actividad 2</title>
+</head>
+<body class = "filter">
+  <link rel="stylesheet" href="Actividad 2.css">
+      
+      <form class = "formulario"> 
+        <h1 color="white" >Formulario</h1>
+       <!--Conmienzo de las etiquetas input-->
+        <label for = "nombre">Nombre:</label> <input id="Nombre" class="entrada" 
+        type="text" placeholder = "Escribe tu nomrbe" name="name" required> 
+          <!--El atributo name debe tener un nombre distinto-->
+         <label for = "numero">Edad:</label> <input type="number" placeholder = "Escribe tu edad"
+         class = "entrada" name="edad" id="numero" required>
+
+         <label for = "etiqueta">Contraseña: </label> <input type="password"
+          class = "entrada" name="name" id="etiqueta" required> 
+             
+         <label for = "correo">Email: </label> <input type="email" placeholder = "Correo" 
+         class = "entrada" name="name2" id="correo"required> 
+
+         <label for = "link">URL: </label> <input type="url" placeholder ="Link"
+         class = "entrada" name="name3" id="link"> 
+
+         <fieldset class="genero">
+           <input type="radio" name="genero"> <label>Masculino</label>
+           <input type="radio" name="genero"> <label>Femenino</label>
+         </fieldset>
+         
+         <h4>Materias Favoritas</h4>
+  <fieldset class="materias">
+          <!--Los div son contenedores vacios-->
+          <div> 
+            <input type="checkbox">
+            <label>Ingles</label>
+          </div>
+           
+           <div>
+            <input type="checkbox">
+            <label>Geografia</label>
+        </div>
+           <div>
+          <input type="checkbox">
+          <label>Fisica</label>
+         </div>       
+    </fieldset> 
+         <input id= "enviar"  type = "submit" class= "boton" value = "Enviar">
+         <input id ="borrar" type="reset" class="boton" value="Borrar">
+      </form>
+      <div class="fondo"></div>
+    </body>
+</html>
